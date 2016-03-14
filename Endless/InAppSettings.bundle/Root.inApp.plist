@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>User Interface</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Toolbar on bottom</string>
+			<key>Key</key>
+			<string>toolbar_on_bottom</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Dark interface</string>
+			<key>Key</key>
+			<string>dark_interface</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>DuckDuckGo</string>
+			<key>Values</key>
+			<array>
+				<string>DuckDuckGo</string>
+				<string>Google</string>
+				<string>Startpage</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>DuckDuckGo</string>
+				<string>Google</string>
+				<string>Startpage</string>
+			</array>
+			<key>Key</key>
+			<string>search_engine</string>
+			<key>Title</key>
+			<string>Search engine</string>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Privacy</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>FooterText</key>
+			<string>Cookies and local storage data from non-whitelisted hosts will be cleared after not being accessed by any tabs for this many minutes</string>
+		</dict>
+		<dict>
+			<key>IASKViewControllerClass</key>
+			<string>CookieController</string>
+			<key>Title</key>
+			<string>Edit cookies and local storage</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>old_data_sweep_mins</string>
+			<key>Title</key>
+			<string>Cookie auto-sweep interval</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>DefaultValue</key>
+			<integer>30</integer>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+			<key>IASKTextAlignment</key>
+			<string>IASKUITextAlignmentRight</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string></string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>FooterText</key>
+			<string>When switching to another app, close all tabs and non-whitelisted cookies</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>clear_on_background</string>
+			<key>Title</key>
+			<string>Clear all when backgrounded</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string></string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>send_dnt</string>
+			<key>Title</key>
+			<string>Send Do-Not-Track</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Miscellaneous</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>open_app_store</string>
+			<key>Type</key>
+			<string>IASKOpenURLSpecifier</string>
+			<key>Title</key>
+			<string>Rate on App Store</string>
+			<key>File</key>
+			<string>itms-apps://itunes.apple.com/app/id974745755</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>open_github_issues</string>
+			<key>Type</key>
+			<string>IASKOpenURLSpecifier</string>
+			<key>Title</key>
+			<string>Report a bug</string>
+			<key>File</key>
+			<string>endlesshttps://github.com/jcs/endless/issues</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>credits.html</string>
+			<key>IASKViewControllerClass</key>
+			<string>IASKAppSettingsWebViewController</string>
+			<key>IASKViewControllerSelector</key>
+			<string>initWithFile:specifier:</string>
+			<key>Title</key>
+			<string>About</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>IASKChildTitle</key>
+			<string>About Endless</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>
